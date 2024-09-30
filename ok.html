@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+                <html>
+                <head>
+                    <title>WebView Example</title>
+                    <style>
+                        body {
+                            font-family: Arial, sans-serif;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #f4f4f4;
+                            text-align: center;
+                        }
+                        h1 {
+                            color: #333;
+                            font-size: 48px;
+                            margin-top: 20px;
+                        }
+                        p {
+                            color: #666;
+                            font-size: 20px;
+                            margin: 20px 40px;
+                        }
+                        button {
+                            padding: 15px 30px;
+                            font-size: 18px;
+                            color: white;
+                            background-color: #007BFF;
+                            border: none;
+                            border-radius: 5px;
+                            cursor: pointer;
+                        }
+                        button:hover {
+                            background-color: #0056b3;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <h1>Welcome to WebView</h1>
+                    <p>This is a simple example of displaying HTML content in a WKWebView in Android. Below is a button that interacts with the native Android app.</p>
+
+                    <button onclick="sendMessage()">Send Message to SDK</button>
+
+                    <script type="text/javascript">
+                        function sendMessage() {
+                            InAppHTM.sendMessageToSDK("Hello from WebView");
+                        }
+                    </script>
+                </body>
+                </html>
